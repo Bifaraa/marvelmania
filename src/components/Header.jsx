@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className=''>
       <div className='flex justify-between sm:justify-around items-center w-full h-[7em] bg-[#212021] py-12 font-marvel'>
-        <div className='flex justify-center w-[100%] sm:justify-start sm:w-[33%]'>
+        <div className='flex justify-center w-[100%] sm:w-[20%]'>
           <img src='./../../public/Marvel_Logo.svg.png' className='w-[150px]' />
           .
           <h1 className='text-white text-[40px] font-marvel font-bold'>
@@ -34,11 +34,9 @@ export default function Header() {
             id='search'
             name='search'
           />
-          <input
-            className='text-2xl text-white bg-[#ed1c24] px-5 py-1 rounded-md cursor-pointer'
-            type='submit'
-            value='Buscar'
-          />
+          <button className='text-2xl text-white bg-[#ed1c24] px-5 py-1 rounded-md cursor-pointer shadow-lg shadow-[#000]/50 w-[120px]'>
+            Buscar
+          </button>
         </form>
         <div className='hidden sm:flex sm:h-[3em] sm:gap-10'>
           <button
@@ -66,7 +64,7 @@ export default function Header() {
         </div>
         {abierto && (
           <nav className='absolute top-0 right-0 text-3xl w-[90%] h-[100vh] p-10 bg-[#212021] z-10 '>
-            <ul className='relative flex flex-col items-end gap-10 mr-10 text-white'>
+            <ul className='relative flex flex-col items-end gap-10 mr-10 text-white font-bold'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='44'
@@ -79,11 +77,26 @@ export default function Header() {
                 <path d='M9.854 5.146a.5.5 0 0 1 0 .708L7.707 8l2.147 2.146a.5.5 0 0 1-.708.708L7 8.707l-2.146 2.147a.5.5 0 0 1-.708-.708L6.293 8 4.146 5.854a.5.5 0 1 1 .708-.708L7 7.293l2.146-2.147a.5.5 0 0 1 .708 0z' />
                 <path d='M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7.08a2 2 0 0 0 1.519-.698l4.843-5.651a1 1 0 0 0 0-1.302L10.6 1.7A2 2 0 0 0 9.08 1H2zm7.08 1a1 1 0 0 1 .76.35L14.682 8l-4.844 5.65a1 1 0 0 1-.759.35H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h7.08z' />
               </svg>
-              <li>Iniciar</li>
-              <li>Registro</li>
-              <li>Comics</li>
-              <li>Eventos</li>
-              <li>Personajes</li>
+              <li className='mt-24'>
+                Iniciar
+                <hr className='w-36 h-3 mt-5' />
+              </li>
+              <li>
+                Registro
+                <hr className='w-36 h-3 mt-5' />
+              </li>
+              <li>
+                Comics
+                <hr className='w-36 h-3 mt-5' />
+              </li>
+              <li>
+                Eventos
+                <hr className='w-36 h-3 mt-5' />
+              </li>
+              <li>
+                Personajes
+                <hr className='w-36 h-3 mt-5' />
+              </li>
             </ul>
           </nav>
         )}
