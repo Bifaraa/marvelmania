@@ -84,7 +84,7 @@ export default function Header() {
           <button
             className=' relative font-medium bg-[#ed1c24] text-white p-1 rounded-md text-xl shadow-lg shadow-[#000]/50 w-[120px]'
             type='submit'
-            onClick={irRegistro}
+            onClick={() => setModal(true)}
           >
             <a
               className="before:absolute before:top-0 before:left-0 before:content-['']  before:block before:w-0 before:h-full before:bg-[#d00000]/50  before:transition-all  before:ease-in-out before:rounded-md hover:before:w-full"
