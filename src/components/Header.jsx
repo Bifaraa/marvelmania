@@ -176,7 +176,7 @@ export default function Header() {
         <div className='h-64 bg-blue-500 flex justify-center items-center sm:h-96'>
           <img
             className='static object-cover w-full h-full'
-            src='../../public/1.jpg'
+            src='/public/1.jpg'
           />
         </div>
         <div className='h-64 bg-green-500 flex justify-center items-center sm:h-96'>
