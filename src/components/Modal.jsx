@@ -20,6 +20,7 @@ export default function Modal({ isOpen, setIsOpen, txt }) {
         fetchCharacterByName(nombre).then((res) => {
           setListFetch(res.data.results)
           console.log(listFetch)
+          return null
         })
       }
 
@@ -27,6 +28,7 @@ export default function Modal({ isOpen, setIsOpen, txt }) {
         fetchComicByName(nombre).then((res) => {
           setListFetch(res.data.results)
           console.log(listFetch)
+          return null
         })
       }
     }
@@ -80,7 +82,7 @@ export default function Modal({ isOpen, setIsOpen, txt }) {
                           }
                           className='w-[25%] object-cover rounded-t-lg shadow-lg shadow-[#101010]/50 '
                         />
-                        <div className='h-full flex flex-col items-center justify-center p-10 gap-10'>
+                        <div className='h-full w-[75%] flex flex-col items-center justify-center p-10 gap-10'>
                           <h3 className='text-[3em] font-bold'>
                             {personaje.name}
                             {personaje.title}
