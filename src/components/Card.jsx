@@ -25,19 +25,19 @@ export default function Card({ path, extension, name, description, isbn }) {
       {isbn ? (
         <span className='text-2xl self-center'>ISBN: {isbn}</span>
       ) : isbn === '' ? (
-        <span className='text-2xl self-center'>ISBN: No encontrado</span>
+        <span className='text-2xl self-center'>ISBN: Not found</span>
       ) : (
         <></>
       )}
 
       {description !== '' ? (
         <p onClick={verDesripcion} className='w-full text-center text-lg'>
-          <span className='text-2xl font-bold'>Ver más</span> <br />{' '}
+          <span className='text-2xl font-bold'>View more</span> <br />{' '}
           {verMas && description}
         </p>
       ) : (
         <p className='w-full text-center text-lg'>
-          <span className='text-2xl font-bold'>Sin descripción</span>
+          <span className='text-2xl font-bold'>No description</span>
         </p>
       )}
     </div>

@@ -4,9 +4,7 @@ export default function Footer() {
   return (
     <footer className='mt-24 bg-[#212021] text-white flex sm:justify-around py-10 px-10 flex-col gap-7 sm:flex-row'>
       <section className='flex sm:flex-row items-center sm:gap-10 gap-5 flex-col'>
-        <p className='sm:mb-3'>
-          Siguenos en nuestras <br /> redes sociales
-        </p>
+        <p className='sm:mb-3'>Follow us on our social media</p>
         <div className=''>
           <div className='flex gap-5 mb-3'>
             <img src='../../public/redes/facebook_line.svg' alt='' />
@@ -23,7 +21,7 @@ export default function Footer() {
         <h1 className='text-white text-[40px] font-marvel font-bold'>Mania</h1>
       </div>
       <section className='flex items-center sm:gap-10 flex-col gap-5 sm:flex-row'>
-        <p className='mb-3'>Contactanos</p>
+        <p className='mb-3'>Contact us</p>
         <div>
           <div className='flex gap-5 mb-3'>
             <img src='../../public/redes/whatsapp_line.svg' alt='' />

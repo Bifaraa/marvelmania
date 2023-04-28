@@ -33,11 +33,11 @@ export default function Registro() {
         className='absolute text-3xl text-center top-[5%] left-2 rounded-md bg-[#212021]/70 p-2 sm:left-[80%] text-white cursor-pointer hover:text-gray-400'
         onClick={irHome}
       >
-        Volver al inicio
+        Back to home
       </a>
       <div className=' sm:mx-auto sm:w-full max-w-md bg-[#212021]/70 p-12 rounded-md shadow-2xl shadow-black'>
         <h2 className='text-center text-[2.5em] font-extrabold text-white'>
-          Registro
+          Sign Up
         </h2>
         <form className='mt-8 space-y-6' onSubmit={handleSubmit}>
           <div className='rounded-md shadow-sm space-y-5'>
@@ -49,7 +49,7 @@ export default function Registro() {
                 autoComplete='name'
                 required
                 className='rounded-none block w-full px-3 py-2 border-2 border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-[#ed1c24] focus:border-[#ed1c24] focus:z-10 text-3xl'
-                placeholder='Nombre completo'
+                placeholder='Full name'
                 onChange={handleUsernameChange}
               />
             </div>
@@ -58,10 +58,10 @@ export default function Registro() {
                 id='correo'
                 name='correo'
                 type='text'
-                autoComplete='correo'
+                autoComplete='Email'
                 required
                 className='rounded-none block w-full px-3 py-2 border-2 border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-[#ed1c24] focus:border-[#ed1c24] focus:z-10 text-3xl'
-                placeholder='Correo Electronico'
+                placeholder='Email'
                 onChange={handleUsernameChange}
               />
             </div>
@@ -70,10 +70,10 @@ export default function Registro() {
                 id='username'
                 name='username'
                 type='text'
-                autoComplete='username'
+                autoComplete='Username'
                 required
                 className='rounded-none block w-full px-3 py-2 border-2 border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-[#ed1c24] focus:border-[#ed1c24] focus:z-10 text-3xl'
-                placeholder='Usuario'
+                placeholder='Username'
                 value={username}
                 onChange={handleUsernameChange}
               />
@@ -86,7 +86,7 @@ export default function Registro() {
                 autoComplete='current-password'
                 required
                 className=' rounded-none block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-[#ed1c24] focus:border-[#ed1c24] focus:z-10 text-3xl'
-                placeholder='Contraseña'
+                placeholder='Password'
                 value={password}
                 onChange={handlePasswordChange}
               />
@@ -100,7 +100,7 @@ export default function Registro() {
                 className='font-medium text-white hover:text-gray-400 text-3xl'
                 onClick={irIniciarSesion}
               >
-                Iniciar Sesión
+                log In
               </a>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Registro() {
                 className="before:absolute before:top-0 before:left-0 before:content-['']  before:block before:w-0 before:h-full before:bg-[#d00000]/50  before:transition-all  before:ease-in-out before:rounded-md hover:before:w-full"
                 href='#'
               >
-                <span className='z-[10] relative'>Registrarse</span>
+                <span className='z-[10] relative'>Sign Up</span>
               </a>
             </button>
           </div>

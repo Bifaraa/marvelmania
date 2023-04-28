@@ -33,7 +33,7 @@ export default function Personajes() {
                 />
               ))
             ) : (
-              <span className='mt-10 text-3xl text-red-900'>Cargando ...</span>
+              <span className='mt-10 text-3xl text-red-900'>Loading ...</span>
             )}
           </section>
         )}

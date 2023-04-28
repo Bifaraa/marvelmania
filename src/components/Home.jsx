@@ -9,16 +9,14 @@ export default function Home() {
       <main className='mt-[2em] px-9 flex justify-center'>
         <article className='sm:w-[70%] sm:m-10'>
           <p className='sm:divide-y sm:columns-2'>
-            ¡Bienvenidos a MarvelMania!, el destino definitivo para los fans de
-            Marvel. Si eres un amante de los cómics, películas y series del
-            universo Marvel, ¡este es el lugar perfecto para ti! Nuestro sitio
-            web está diseñado para brindarle a los usuarios una experiencia
-            completa, ya sea que quieras aprender sobre los personajes más
-            icónicos del universo Marvel, o mantenerte actualizado con los
-            últimos eventos y lanzamientos de cómics. En MarvelMania, puedes
-            explorar una amplia variedad de contenido, desde artículos
-            detallados y reseñas de cómics, hasta biografías de personajes y
-            sinopsis de películas y series.
+            Welcome to MarvelMania, the ultimate destination for Marvel fans. If
+            you are a lover of Marvel comics, movies, and series, this is the
+            perfect place for you! Our website is designed to provide users with
+            a complete experience, whether you want to learn about the most
+            iconic characters in the Marvel universe or stay up-to-date with the
+            latest comic events and releases. At MarvelMania, you can explore a
+            wide variety of content, from detailed articles and comic reviews to
+            character biographies and movie and series synopses.
           </p>
         </article>
       </main>

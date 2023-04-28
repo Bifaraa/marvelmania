@@ -9,14 +9,14 @@ export default function Modal({ isOpen, setIsOpen, txt }) {
 
   useEffect(() => {
     if (!txt.includes(':')) {
-      alert('Ingrese una cadena valida \n ejemplo: personaje: iron man')
+      alert('Please enter a valid string \n example: character: iron man')
       setIsOpen(false)
     } else {
       const splitCadena = txt.toLowerCase().split(':')
       const categoria = splitCadena[0].trim()
       const nombre = splitCadena[1].trim()
 
-      if (categoria === 'personaje') {
+      if (categoria === 'characters') {
         fetchCharacterByName(nombre).then((res) => {
           setListFetch(res.data.results)
           console.log(listFetch)
@@ -67,7 +67,7 @@ export default function Modal({ isOpen, setIsOpen, txt }) {
               leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
             >
               <div className='bg-slate-200 overflow-y-auto rounded-lg shadow-xl transform transition-all w-[80vw] h-[90vh] '>
-                <div className='space-x-24 p-10 flex flex-wrap gap-10'>
+                <div className='space-x-24 p-10 flex flex-wrap justify-center items-center gap-10'>
                   {Array.isArray(listFetch) ? (
                     listFetch.map((personaje) => (
                       <div

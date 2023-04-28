@@ -49,7 +49,6 @@ export default function Header() {
 
   const handlerSumit = (e) => {
     e.preventDefault()
-    console.log(input)
   }
 
   const handlerInput = (e) => {
@@ -78,7 +77,7 @@ export default function Header() {
             type='text'
             id='search'
             name='search'
-            placeholder='personaje: iron man'
+            placeholder='characters: iron man'
             onChange={handlerInput}
           />
           <button
@@ -90,7 +89,7 @@ export default function Header() {
               className="before:absolute before:top-0 before:left-0 before:content-['']  before:block before:w-0 before:h-full before:bg-[#d00000]/50  before:transition-all  before:ease-in-out before:rounded-md hover:before:w-full"
               href='#'
             >
-              <span className='z-[10] relative'>Buscar</span>
+              <span className='z-[10] relative'>Search</span>
             </a>
           </button>
           {modal && <Modal isOpen={modal} setIsOpen={setModal} txt={input} />}
@@ -105,7 +104,7 @@ export default function Header() {
               className="before:absolute before:top-0 before:left-0 before:content-['']  before:block before:w-0 before:h-full before:bg-[#d00000]/50  before:transition-all  before:ease-in-out before:rounded-md hover:before:w-full"
               href='#'
             >
-              <span className='z-[10] relative'>Iniciar Sesión</span>
+              <span className='z-[10] relative'>Log In</span>
             </a>
           </button>
           <button
@@ -117,7 +116,7 @@ export default function Header() {
               className="before:absolute before:top-0 before:left-0 before:content-['']  before:block before:w-0 before:h-full before:bg-[#d00000]/50  before:transition-all  before:ease-in-out before:rounded-md hover:before:w-full"
               href='#'
             >
-              <span className='z-[10] relative'>Registarme</span>
+              <span className='z-[10] relative'>Sign up</span>
             </a>
           </button>
         </div>
@@ -137,11 +136,11 @@ export default function Header() {
                 <path d='M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7.08a2 2 0 0 0 1.519-.698l4.843-5.651a1 1 0 0 0 0-1.302L10.6 1.7A2 2 0 0 0 9.08 1H2zm7.08 1a1 1 0 0 1 .76.35L14.682 8l-4.844 5.65a1 1 0 0 1-.759.35H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h7.08z' />
               </svg>
               <li className='mt-24' onClick={irLogin}>
-                Iniciar sesión
+                Log In
                 <hr className='w-36 h-3 mt-5' />
               </li>
               <li onClick={irRegistro}>
-                Registro
+                Sign In
                 <hr className='w-36 h-3 mt-5' />
               </li>
               <li onClick={irComic}>
@@ -149,11 +148,11 @@ export default function Header() {
                 <hr className='w-36 h-3 mt-5' />
               </li>
               <li onClick={irEvento}>
-                Eventos
+                Events
                 <hr className='w-36 h-3 mt-5' />
               </li>
               <li onClick={irPersonaje}>
-                Personajes
+                Characters
                 <hr className='w-36 h-3 mt-5' />
               </li>
             </ul>
@@ -207,7 +206,7 @@ export default function Header() {
               onClick={irPersonaje}
               className='after:absolute after:content after:left-0 after:botton-0 after:block after:w-0 after:bg-red-900 after:h-[5px] after:transition-all hover:after:w-full after:duration-900ms after:ease-out'
             >
-              Personajes
+              Characters
             </a>
           </li>
           <li className='relative cursor-pointer'>
@@ -215,7 +214,7 @@ export default function Header() {
               onClick={irEvento}
               className='after:absolute after:content after:left-0 after:botton-0 after:block after:w-0 after:bg-red-900 after:h-[5px] after:transition-all hover:after:w-full after:duration-900ms after:ease-out'
             >
-              Eventos
+              Events
             </a>
           </li>
         </ul>
@@ -230,7 +229,7 @@ export default function Header() {
         <input
           className='text-3xl text-white bg-[#ed1c24] px-10 py-3 rounded-md'
           type='submit'
-          value='Buscar'
+          value='Search'
           onClick={() => setModal(true)}
         />
         {modal && <Modal isOpen={modal} setIsOpen={setModal} txt={input} />}
